@@ -22,7 +22,7 @@ include __DIR__ . '/../database.php';
     <?php
 
         foreach($database as $cards => $singleCard) {
-            echo "<div> <img src=" . $singleCard["poster"] . "/>  </div>";
+            echo "<div> <img src='" . $singleCard["poster"] . "'/> . <div> <h3>" . $singleCard["title"] . "</h3> <p>" . $singleCard["author"] . "</p> <p>" . $singleCard["year"] . "</p> </div> </div>";
         }
 
 
