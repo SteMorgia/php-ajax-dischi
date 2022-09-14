@@ -2,10 +2,12 @@
 
 header("Content-Type: application/json");
 
-include __DIR__ . '/../database.php';
+include __DIR__ . '/../../database.php';
 
 $api = $database;
 
-echo json_encode($api);
+echo json_encode($api); 
+
+
 
 ?>

@@ -13,14 +13,17 @@
 
     <div id="app">
 
-        <div v-for="(card, index) in myArray" class="card" style="width: 18rem;">
-            <img :src="card.poster" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{card.title}}</h5>
-                <p class="card-text">{{card.author}}</p>
-                <p class="card-text">{{card.year}}</p>
+        <div class="mioContainer">
+            <div v-for="(card, index) in myArray" class="card" style="width: 18rem;">
+                <img :src="card.poster" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{card.title}}</h5>
+                    <p class="card-text">{{card.author}}</p>
+                    <p class="card-text">{{card.year}}</p>
+                </div>
             </div>
         </div>
+            
 
     </div>
 

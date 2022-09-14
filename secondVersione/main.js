@@ -4,7 +4,7 @@ var app = new Vue({
         myArray: []
     },
     created() {
-        axios.get('http://http://localhost/php-ajax-dischi/secondVersione/api/')
+        axios.get('http://localhost/php-ajax-dischi/secondVersione/api/api.php')
         .then(response => {
             this.myArray = response.data;
         })
